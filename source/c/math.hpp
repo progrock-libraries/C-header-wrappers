@@ -4,7 +4,7 @@
 // Common math functions.
 // Addditionally defines M_PI etc. The M_xxx constants are a de facto standard for
 // C and C++. They're specified by the Posix standard, see e.g.
-// <url: http://pubs.opengroup.org/onlinepubs/7908799/xsh/math.h.html>.
+// <url: http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/math.h.html>.
 //
 // Copyright © 2017 Alf P. Steinbach, distributed under Boost license 1.0.
 
