@@ -10,9 +10,9 @@ auto type_name( double ) -> C_str   { return "double"; }
 
 auto main() -> int
 {
-    using std::cout, std::endl, std::setprecision;
+    using std::cout, std::endl, std::fixed, std::setprecision;
     
-    cout << setprecision( DBL_DIG )
+    cout << fixed << setprecision( DBL_DIG )
         << "`M_PI` is a " << type_name( M_PI ) << " of value ~= " << abs( -M_PI )
         << ", and `abs(42)` is an " << type_name( abs( 42 ) ) << "."
         << endl;
