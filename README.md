@@ -1,6 +1,6 @@
 # C header wrappers for C++
 
-Wraps C++'s 26 pairs of `<cFOO>` and `<FOO.h>` headers via a single `<c/FOO.hpp>` header for each pair.
+Wraps C++ 17's 26 pairs of `<cFOO>` and `<FOO.h>` headers via a single `<c/FOO.hpp>` header for each pair.
 
 --- 
 
