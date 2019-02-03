@@ -11,7 +11,7 @@
 #include <cstdlib>       // `int` overloads of `abs` and `div`
 #include <stdlib.h>
 #
-#ifdef NO_MATH_CONSTANTS_PLEASE
+#ifdef C_NO_MATH_CONSTANTS_PLEASE
 #   include <cmath>
 #   include <math.h>
 #else
@@ -25,7 +25,7 @@
 #   include <math.h>
 #
 #   ifndef M_PI        // TODO: also handle non-macro M_PI
-#       ifdef NO_UNOFFICIAL_MATH_CONSTANTS_PLEASE
+#       ifdef C_NO_UNOFFICIAL_MATH_CONSTANTS_PLEASE
 #           error The compiler vendor's <math.h> didn't define M_PI as expected.
 #       endif
 #       define _MATH_DEFINES_DEFINED   // Avoid MSVC redefinition warning.
