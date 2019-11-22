@@ -6,4 +6,3 @@
 
 #include <cstddef>
 #include <stddef.h>
-using std::nullptr_t;       // For MinGW g++
