@@ -15,6 +15,12 @@
 #   include <cmath>
 #   include <math.h>
 #else
+#   ifdef MATH_ERRNO
+#       if defined( __GNUC__ ) and not defined( M_PI )
+#           error "<math.h> or <cmath> has been included without _USE_MATH_DEFINES."
+#       endif
+#   endif
+#
 #   undef   __STRICT_ANSI__             // For g++
 #   undef   _USE_MATH_DEFINES           // Suppress sillywarning.
 #   define  _USE_MATH_DEFINES           // M_PI etc.
@@ -29,6 +35,7 @@
 #           error The compiler vendor's <math.h> didn't define M_PI as expected.
 #       endif
 #       define _MATH_DEFINES_DEFINED   // Avoid MSVC redefinition warning.
+#
 #       define M_E         2.71828182845904523536          // e               
 #       define M_LOG2E     1.44269504088896340736          // log2(e)         
 #       define M_LOG10E    0.434294481903251827651         // log10(e)        
