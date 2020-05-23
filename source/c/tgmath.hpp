@@ -8,5 +8,5 @@
 //
 // Copyright © 2017 Alf P. Steinbach, distributed under Boost license 1.0.
 
-#include <ctgmath>          // Non-C++-compatible macro definitions, + includes.
+#include <ctgmath>          // Non-C++-compatible macro definitions + includes.
 // #include <tgmath.h>      // Not available with Visual C++ 2017.
